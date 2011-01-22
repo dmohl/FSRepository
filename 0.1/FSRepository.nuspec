@@ -11,7 +11,7 @@
     <description>FSRepository 0.1 provides a quick way of creating repositories that use EFCodeFirst 0.8 for data access.</description>
     <summary>FSRepository 0.1 provides a quick way of creating repositories that use EFCodeFirst 0.8 for data access.</summary>
       <language>en-US</language>
-      <!-- <projectUrl>http://www.github.org/FSRepository</projectUrl> -->
+      <projectUrl>https://github.com/dmohl/FSRepository</projectUrl> 
       <licenseUrl>http://www.opensource.org/licenses/ms-pl.html</licenseUrl>
   </metadata>
 </package>
