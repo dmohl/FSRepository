@@ -14,4 +14,8 @@
       <projectUrl>https://github.com/dmohl/FSRepository</projectUrl> 
       <licenseUrl>http://www.opensource.org/licenses/ms-pl.html</licenseUrl>
   </metadata>
+  <files>
+      <file src="Content\Entities\*.pp" target="Content\Entities" />
+	  <file src="Content\Repositories\*.pp" target="Content\Repositories" />
+  </files>
 </package>
