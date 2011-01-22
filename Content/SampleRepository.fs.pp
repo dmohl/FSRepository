@@ -6,7 +6,7 @@ open System.Collections.Generic
 
 type SampleRepository() =
     let context = new MyApplicationEntities()
-    interface IRepository<Sample> with
+    interface IRepository<ASample> with
         member x.GetAll() = context.Samples |> Seq.cast
         member x.GetById id = context.Samples.Find(id)
         member x.Add item = 
