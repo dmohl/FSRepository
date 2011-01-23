@@ -16,5 +16,6 @@
   </metadata>
   <files>
 	  <file src="Content\*.pp" target="Content" />
+	  <file src="Tools\*.ps1" target="Tools" />
   </files>
 </package>
