@@ -3,6 +3,7 @@
 open System
 open System.Data.Entity
 open System.Collections.Generic
+open $rootnamespace$.Entities
 
 type SampleRepository() =
     let context = new MyApplicationEntities()
