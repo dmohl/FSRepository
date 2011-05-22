@@ -2,13 +2,13 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <id>FSRepository</id>
-    <version>0.5.0.0</version>
+    <version>1.0.0.0</version>
     <dependencies>
-      <dependency id="EFCodeFirst" version="0.8" />
+      <dependency id="EntityFramework" version="[4.1.10331.0, 5.0.0.0)" />
     </dependencies>
     <authors>Daniel Mohl</authors>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>FSRepository provides a quick way of creating a repository in an F# project that use EFCodeFirst 0.8 for data access.</description>
+    <description>FSRepository provides a quick way of creating a repository in an F# project that uses EntityFramework code first for data access.</description>
     <summary>Visit http://bloggemdano.blogspot.com/2011/01/fsrepository-new-nuget-package.html for information on using this NuGet package.</summary>
       <language>en-US</language>
       <projectUrl>https://github.com/dmohl/FSRepository</projectUrl> 

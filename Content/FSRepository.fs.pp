@@ -3,7 +3,6 @@ namespace $rootnamespace$.Repositories
 open System
 open System.Collections.Generic
 open System.Data.Entity
-open System.Data.Entity.Database
 
 type ASample() =
     let mutable id = 0
