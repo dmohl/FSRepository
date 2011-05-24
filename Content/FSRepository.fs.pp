@@ -24,22 +24,16 @@ type MyApplicationEntities() =
     member x.Samples with get() = x.samples and set(v) = x.samples <- v
     // Add a new DbSet for each entity that should be persisted to the data store 
 
-type IRepository<'a> =
-    abstract Add : 'a -> unit
-    abstract Delete : 'a -> unit
-    abstract GetAll : unit -> seq<'a>
-    abstract GetById : 'b -> 'a
-    abstract Save : unit -> unit
-
 type SampleRepository() =
     let context = new MyApplicationEntities()
-    interface IRepository<ASample> with
-        member x.GetAll() = context.Samples |> Seq.cast
-        member x.GetById id = context.Samples.Find(id)
-        member x.Add item = 
-            context.Samples.Add item |> ignore
-        member x.Delete id =
-            context.Samples.Find(id)
-            |> context.Samples.Remove 
-            |> ignore
-        member x.Save() = context.SaveChanges() |> ignore
+    member x.GetAll() = context.Samples |> Seq.cast
+    member x.GetById id = context.Samples.Find(id)
+    member x.Add item = 
+        context.Samples.Add item |> ignore
+    member x.Delete id =
+        context.Samples.Find(id)
+        |> context.Samples.Remove 
+        |> ignore
+    member x.Save() = context.SaveChanges() |> ignore
+    interface IDisposable with
+        member x.Dispose() = context.Dispose()
